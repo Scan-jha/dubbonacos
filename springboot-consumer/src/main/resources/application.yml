@@ -1,0 +1,14 @@
+server:
+  port: 8862
+dubbo:
+  application:
+    name: comsumer
+    qos-enable: false
+    qos-accept-foreign-ip: false
+  registry:
+    address:
+    consumer:
+      timeout: 4000
+spring:   #解决bean重复的问题
+  main:
+    allow-bean-definition-overriding: true

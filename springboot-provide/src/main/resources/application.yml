@@ -1,0 +1,17 @@
+server:
+  port: 8860
+dubbo:
+  application:
+    name: provide
+    qos-enable: false
+    qos-accept-foreign-ip: false
+  registry:
+    address:
+    consumer:
+      timeout: 4000
+  protocol:
+    name: dubbo
+    port: 20880
+spring:   #解决bean重复的问题
+  main:
+    allow-bean-definition-overriding: true
